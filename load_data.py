@@ -18,11 +18,11 @@ else:
     print("Dataset already exists!")
 
 conn = duckdb.connect("dataset.db")
-if not os.path.exists("dataset.db"):
-    print("Loading dataset into duckdb")
-    conn.sql(
+
+print("Loading dataset into duckdb")
+conn.sql(
         "CREATE TABLE dataset AS SELECT * FROM read_parquet('dataset.parquet')")
-else:
-    print("Database dataset exists")
+
+print("Database dataset exists")
 conn.sql('SELECT * FROM dataset LIMIT 5').show()
 conn.close()
