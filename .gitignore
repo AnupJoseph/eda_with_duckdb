@@ -1,2 +1,4 @@
 dataset.db
 dataset.parquet
+
+dataset.db.wal

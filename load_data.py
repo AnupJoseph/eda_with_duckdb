@@ -4,7 +4,7 @@ import os
 from sklearn.datasets import fetch_openml
 import duckdb
 
-# warnings.filterwarnings("ignore")
+warnings.filterwarnings("ignore")
 
 if not os.path.exists("dataset.parquet"):
     print("Downloading data from OpenML")
