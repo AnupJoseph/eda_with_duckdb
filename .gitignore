@@ -2,3 +2,5 @@ dataset.db
 dataset.parquet
 
 dataset.db.wal
+
+__pycache__
