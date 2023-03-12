@@ -5,4 +5,4 @@ def wrap_to_string(df):
     return numeric_columns
 
 
-trimmer = lambda x:f"{x[:15]}..."
+trimmer = lambda x:f"{x[:30]}..."
